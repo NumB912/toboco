@@ -1,6 +1,6 @@
 x-check-common: &check-common
   env_file:
-    - ./.env.dependencies
+    - ./.env.dependencies.production
   environment:
     NODE_ENV: production
   restart: "no"
@@ -19,6 +19,7 @@ services:
   back-end:
     environment:
       NODE_ENV: production
+    restart: on-failure
     build: "./backend"
     container_name: toboco-backend
     env_file: ./backend/.env.production
@@ -42,8 +43,6 @@ services:
     container_name: toboco-frontend
     ports:
      - "3000:3000"
-    depends_on:
-     - back-end
     networks:
       - tm-network
 
