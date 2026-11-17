@@ -97,7 +97,6 @@ export const TYPES = {
   SynsMemberTagUsecase:Symbol.for("SynsMemberTagUsecase"),
   AddTagsForMemberUsecase:Symbol.for("AddTagsForMemberUsecase"),
 
-
   FilterRepository: Symbol.for("FilterRepository"),
   GetAllFilterUsecase: Symbol.for("GetAllFilterUsecase"),
   GetFilterByIdUsecase: Symbol.for("GetFilterByIdUsecase"),
