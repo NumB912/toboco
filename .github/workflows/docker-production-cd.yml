@@ -89,7 +89,7 @@ jobs:
             test -d notifier-services
 
             umask 077
-            printf '%s' "$DEPENDENCIES_ENV" > .env.dependencies
+            printf '%s' "$DEPENDENCIES_ENV" > .env.dependencies.production
             printf '%s' "$BACKEND_ENV" > backend/.env.production
             printf '%s' "$FRONTEND_ENV" > frontend/.env.production
             printf '%s' "$FILE_ENV" > file-services/.env.production
