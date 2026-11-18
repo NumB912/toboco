@@ -185,3 +185,4 @@ Hệ thống được chia thành nhiều service nhằm:
 - Giảm coupling giữa các module.
 - Cho phép các service được triển khai độc lập.
 - Dễ dàng thay thế hoặc mở rộng từng service trong tương lai.
+- Dễ dàng tái sữ dụng cho các service khác chỉ bằng cách kết nối để dùng với các dịch vụ của application khác.
