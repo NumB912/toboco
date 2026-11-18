@@ -74,13 +74,12 @@ Frontend
 
 Email Service chịu trách nhiệm xử lý việc gửi email.
 
-Ví dụ:
-
+- Gửi email qua resend
 - Email xác thực tài khoản
 - Reset password
 - Email thông báo
 - Email xác nhận hành động
-- Email system
+
 
 Backend không cần trực tiếp xử lý quá trình gửi email mà có thể gửi request/message đến Email Service.
 
@@ -107,9 +106,7 @@ File Service chịu trách nhiệm quản lý các file được upload lên h�
 **Nhiệm vụ chính:**
 
 - Upload file
-- Download file
 - Delete file
-- Quản lý metadata
 - Kiểm tra file
 - Lưu trữ file
 
@@ -132,10 +129,10 @@ File Storage
 
 Notification Service chịu trách nhiệm xử lý notification của hệ thống.
 
-Ví dụ:
 
 - Notification khi có message mới
 - Notification khi có request
+- Notification khi mời người dùng vào nhóm.
 - Notification khi một action hoàn thành
 - Real-time notification
 
@@ -147,7 +144,7 @@ Notification Service
     │
     ├── Database
     │
-    └── WebSocket / SSE
+    └──  SSE
              │
              ▼
           Frontend
