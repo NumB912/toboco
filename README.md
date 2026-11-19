@@ -17,7 +17,6 @@
 | 📧 Email Service | Gửi và quản lý email |
 | 📁 File Service | Upload, lưu trữ và quản lý file |
 | 🔔 Notification Service | Xử lý và gửi notification đến người dùng |
-
 ---
 
 ## 🎨 Frontend
