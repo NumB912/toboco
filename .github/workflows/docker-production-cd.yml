@@ -98,7 +98,7 @@ jobs:
             printf '%s' "$FRONTEND_ENV" > frontend/.env.production
 
             chmod 600 \
-              .env.dependencies \
+              .env.dependencies.production \
               backend/.env.production \
               file-services/.env.production \
               email-services/.env.production \
